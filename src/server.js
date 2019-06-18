@@ -138,9 +138,11 @@ function run(db) {
     app.get('/feed', (request, reply) => {
         const user = getUser(request);
         if (!isAdmin(user)) return reply.status(403).send({ error: 'Forbidden' });
+        //site_url: 'http://localhost:65515' // this works
+        //site_url: config.get('schnack_host') // this doesn't work
         var feed = new RSS({
             title: 'Awaiting moderation',
-            site_url: config.get('schnack_host')
+            site_url: 'http://localhost:65515'
         });
         db.each(
             queries.awaiting_moderation,
