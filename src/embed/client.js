@@ -151,7 +151,7 @@ export default class Schnack {
                                 const signin = (provider_domain = '') => {
                                     let windowRef = window.open(
                                         `${host}/auth/${provider.id}` +
-                                        (provider_domain ? `/d/${provider_domain}` : ''),
+                                            (provider_domain ? `/d/${provider_domain}` : ''),
                                         provider.name + ' Sign-In',
                                         'resizable,scrollbars,status,width=600,height=500'
                                     );
@@ -198,7 +198,7 @@ export default class Schnack {
                         push.setAttribute('src', `${host}/push.js`);
                         document.head.appendChild(push);
                         this.initialized = true;
-                        //window.localStorage.setItem('schnack-push', 'true');
+			//window.localStorage.setItem('schnack-push', 'true');
                     }
 
                     const action = evt => {
