@@ -193,13 +193,13 @@ export default class Schnack {
                 }
 
                 if (data.user && data.user.admin) {
-                    if (!this.initialized) {
-                        const push = document.createElement('script');
-                        push.setAttribute('src', `${host}/push.js`);
-                        document.head.appendChild(push);
-                        this.initialized = true;
-			//window.localStorage.setItem('schnack-push', 'true');
-                    }
+                    // if (!this.initialized) {
+                    //     const push = document.createElement('script');
+                    //     push.setAttribute('src', `${host}/push.js`);
+                    //     document.head.appendChild(push);
+                    //     this.initialized = true;
+                    //     window.localStorage.setItem('schnack-push', 'true');
+                    // }
 
                     const action = evt => {
                         const btn = evt.target;
