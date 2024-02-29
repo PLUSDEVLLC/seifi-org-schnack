@@ -50,8 +50,8 @@
         "pushover-notifications": "^0.2.4",
         "request": "^2.88.0",
         "rss": "^1.2.2",
-        "sqlite": "^3.0.0",
-        "sqlite3": "^4.0.4",
+        "sqlite": "^5.1.1",
+        "sqlite3": "^5.1.7",
         "unfetch": "^3.1.2",
         "web-push": "^3.3.3"
     },
